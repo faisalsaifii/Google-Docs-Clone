@@ -5,28 +5,38 @@
 }
 
 body {
-	margin: 0;
 	background-color: #f3f3f3;
+	margin: 0;
 }
 
 .container .ql-editor {
-	width: 21cm;
-	min-height: 29.7cm;
-	padding: 1cm;
+	width: 8.5in;
+	min-height: 11in;
+	padding: 1in;
 	margin: 1rem;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 	background-color: white;
 }
 
-.container .ql-toolbar.ql-snow {
+.container .ql-container.ql-snow {
 	border: none;
+	display: flex;
+	justify-content: center;
+}
+
+.container .ql-toolbar.ql-snow {
 	display: flex;
 	justify-content: center;
 	position: sticky;
 	top: 0;
 	z-index: 1;
 	background-color: #f3f3f3;
+	border: none;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+@page {
+	margin: 1in;
 }
 
 @media print {
@@ -35,8 +45,8 @@ body {
 	}
 
 	.container .ql-editor {
-		width: 21cm;
-		height: 29.7cm;
+		width: 6.5in;
+		height: 9in;
 		padding: 0;
 		margin: 0;
 		box-shadow: none;
